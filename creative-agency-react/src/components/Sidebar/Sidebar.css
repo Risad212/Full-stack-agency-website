@@ -1,0 +1,18 @@
+.sidebar{
+    height: 100vh;
+    padding-left: 1rem;
+    box-shadow: 5px 5px 5px #ddd;
+}
+
+.sidebarContent ul{
+    list-style: none;
+    margin-left: 0;
+}
+.sidebarContent ul li{
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.sidebarContent ul li a{
+    text-decoration: none;
+    color: #000;
+}

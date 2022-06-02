@@ -1,0 +1,30 @@
+.brand-wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 3rem 0;
+}
+.brand-wrapper div{
+    display: flex;
+    align-items: center;
+}
+.brand-wrapper div img{
+    width: 40%;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .brand-wrapper div img{
+        width: 80%;
+    }
+    .brand-wrapper{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .brand-wrapper div img{
+        width: 60%;
+    }
+    .brand-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

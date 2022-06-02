@@ -1,0 +1,40 @@
+#navbar{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar ul li{
+    margin-right: 2rem;
+    font-size: 16px;
+}
+.loginBtn{
+    padding: 0.1rem 25px;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.activeNav{
+    background: #fff;
+    transition: all .3s ease-in;
+    box-shadow: 0px 1px 10px #999;
+}
+.active{
+    border-bottom: 3px solid #7AB259;
+    margin: 0;
+    padding-bottom: 0;
+}
+@media only screen and (max-width: 1200px){
+    .navbar ul li{
+        margin-right: 1rem;
+        font-size: 12px;
+    }
+    .mainStyle{
+        padding: 2px 25px;
+    }
+}
+
+.nav-link{
+    color: #fff;
+}

@@ -1,0 +1,60 @@
+.addService{
+    height: 90%;
+}
+.reviw-container{
+    background: #fff;
+    width: 90%;
+    background: #E5E5E5;
+    padding: 1rem;
+}
+.addService input[type=text]{
+    width: 90%;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    color: #575555;
+    margin: .5rem 0;
+    border: 1px solid  #E5E5E5;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+}
+.addService textarea{
+    width: 90%;
+    height: 10rem;
+    padding-left: 1rem;
+}
+.addService .btn{
+    padding: 10px 45px;
+    background: black;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+.addService label{
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: .8rem;
+}
+.addService form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+}
+.addService .fileStyle{
+   width: 50%;
+   padding: 1rem 1rem;
+   padding-left: 1rem;
+   font-size: 16px;
+   background: #DEFFED;
+   margin-top: 1rem;
+   margin-left: .5rem;
+   font-size: 16px;
+   border: 1px solid #009444;
+   outline: none;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   color: #009444;
+   border-radius: 5px;
+}

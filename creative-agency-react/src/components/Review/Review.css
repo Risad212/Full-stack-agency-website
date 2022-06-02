@@ -1,0 +1,27 @@
+.reviw-container{
+    background: #E5E5E5;
+    height: 90%;
+}
+.review input[type=text]{
+    width: 40%;
+    padding: 1rem 0;
+    padding-left: 2rem;
+    color: #575555;
+    margin: .5rem 0;
+    border: 1px solid  #E5E5E5;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+}
+.review textarea{
+    width: 40%;
+    height: 8rem;
+}
+.review .btn{
+    padding: 10px 45px;
+    background: black;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
