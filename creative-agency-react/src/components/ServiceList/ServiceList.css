@@ -4,23 +4,26 @@
 .service-container table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
     background: #fff;
+    width: 100%;  
 }
 .service-container{
   border-radius: 10px;
 }
 .service-container td, th {
-    border: 1px solid #dddddd;
+    /* border: 1px solid #dddddd; */
     text-align: left;
     padding: 8px;
   }
   .service-container th{
     font-size: 1.2rem;
+    background: #ddd;
+    padding: .8rem 0;
   }
 .service-container td{
   font-size: 1rem;
   width: 20%;
+  vertical-align: top;
 }
 .service-container .select select{
   border: none;

@@ -21,11 +21,11 @@ const Router = () => {
               <Route path='/home' element={<HomePage />} />
               <Route path='/login' element={<LoginPage />} />
               <Route path='/dashboard' element={<PrivateRoute><Dashbaord /></PrivateRoute>} />
-              <Route path='/dashboard/servicecard' element={<ServiceListCard />} />
-              <Route path='/dashboard/review' element={<Review />} />
+              <Route path='/dashboard/servicecard' element={<PrivateRoute><ServiceListCard /></PrivateRoute>} />
+              <Route path='/dashboard/review' element={<PrivateRoute><Review /></PrivateRoute>} />
               <Route path='/admin' element={<AdminPrivetRoute><AdminDashbaord /></AdminPrivetRoute>} />
-              <Route path='/admin/addservice' element={<AddService />} />
-              <Route path='/admin/makeadmin' element={<MakeAdmin />} />
+              <Route path='/admin/addservice' element={<AdminPrivetRoute><AddService /></AdminPrivetRoute>} />
+              <Route path='/admin/makeadmin' element={<AdminPrivetRoute><MakeAdmin /></AdminPrivetRoute>} />
               <Route path='/adminlogin' element={<AdminLoginPanel />} />
               <Route path='*' element={<NotFound />} />
           </Routes>

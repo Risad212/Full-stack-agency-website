@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Dropdown from '../Dropdown/Dropdown';
 import './ServiceList.css';
 
 const ServiceList = () => {
@@ -11,9 +12,9 @@ const ServiceList = () => {
     },[])
     return (
         <div className='serviceList' style={{overflow: 'hidden'}}>
-           <div className="container">
+           <div className="container-fluid">
            <div className="service-container bg-light p-5">
-                 <table>
+              <table>
                    <tr>
                      <th>Name</th>
                      <th>Email Id</th>
@@ -25,20 +26,7 @@ const ServiceList = () => {
                       service? 
                        service.map(elem => {
                           return (
-                             <tr>
-                               <td>{elem.name}</td>
-                               <td>{elem.name}</td>
-                               <td>{elem.service}</td>
-                               <td>{elem.discription}</td>
-                               <td className='text-right select'>
-                                  <select name="status" id="">
-                                    <option value="Status">Status</option>
-                                    <option value="Panding">Panding</option>
-                                    <option value="Done">Done</option>
-                                    <option value="on Going">On Going</option>
-                                  </select>
-                               </td>
-                             </tr>
+                            <Dropdown elem={elem}/> 
                           )
                        })
                        :
