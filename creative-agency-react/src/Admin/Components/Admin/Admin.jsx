@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import Home from '../../Pages/home/Home';
 import Sidebar from '../Sidebar/Sidebar';
 import Topbar from '../Topbar/Topbar';
@@ -8,9 +9,9 @@ const Admin = () => {
     return (
         <>
         <Topbar />
-        <div className='admin'>
+          <div className='admin'>
           <Sidebar />
-          <Home />
+          <Outlet />
         </div>
         </>
     );

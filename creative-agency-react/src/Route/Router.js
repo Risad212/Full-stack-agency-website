@@ -5,6 +5,7 @@ import LoginPage from '../Pages/LoginPage/LoginPage';
 import NotFound from '../components/NotFound/NotFound';
 import Admin from '../Admin/Components/Admin/Admin';
 import UserList from '../Admin/Pages/UserList/UserList';
+import Home from '../Admin/Pages/home/Home';
 
 const Router = () => {
     return (
@@ -13,8 +14,10 @@ const Router = () => {
               <Route exact path='/' element={<HomePage />} />
               <Route path='/home' element={<HomePage />} />
               <Route path='/login' element={<LoginPage />} />
-              <Route path='/admin' element={<Admin />} />
-              <Route path='/admin/user' element={<UserList  />} />
+              <Route element={<Admin />}>
+                <Route path='/admin' element={<Home  />} />
+                <Route path='/user' element={<UserList  />} />
+              </Route>
               <Route path='*' element={<NotFound />} />
           </Routes>
        </BrowserRouter>

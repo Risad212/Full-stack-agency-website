@@ -21,7 +21,7 @@ const Sidebar = () => {
               <div className="sidebarMenu">
                  <h3 className="sidebarTitle">Quick Menu</h3>
                  <ul className="sidebarList">
-                    <Link to="admin/user" className='link'><li className="sidebarListItem"><LineStyleIcon className='sidebarIcon'/>Users</li></Link>
+                    <Link to="/admin/user" className='link'><li className="sidebarListItem"><LineStyleIcon className='sidebarIcon'/>Users</li></Link>
                     <Link to="/product" className='link'><li className="sidebarListItem"><TimelineIcon className='sidebarIcon'/>Products</li></Link>
                     <li className="sidebarListItem"><TrendingUpIcon className='sidebarIcon'/>Transactions</li>
                     <li className="sidebarListItem"><TrendingUpIcon className='sidebarIcon'/>Reports</li>
