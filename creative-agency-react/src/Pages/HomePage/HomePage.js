@@ -1,18 +1,14 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
-import Navbar from '../../components/Navbar/Navbar';
-import Brand from '../../components/Brand/Brand';
-import Portfolio from '../../components/portfolio/Portfolio';
-import Footer from '../../components/footer/Footer';
+import Brand from '../../Layout/Brand/Brand';
+import Portfolio from '../../Layout/portfolio/Portfolio';
+import Banner from '../../Layout/Banner/Banner';
 
 const HomePage = () => {
     return (
         <div>
-           <Navbar />
-           <Header />
-           <Brand />
+            <Banner />
+            <Brand />
            <Portfolio />
-           <Footer />
         </div>
     );
 };

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../images/logos/logo.png';
-import './Navbar.css'
+import './Header.css'
 
-const Navbar = () => {
-    const [navbar, setNavbar] = useState(false)
+const Header = () => {
+  const [navbar, setNavbar] = useState(false)
 
     const changeBackground = () => {
       if(window.scrollY > 80){
@@ -49,4 +49,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Header;

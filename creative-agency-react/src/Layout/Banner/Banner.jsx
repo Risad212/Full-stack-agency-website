@@ -1,14 +1,16 @@
 import React from 'react';
-import './Header.css';
+import BannerStyle from './banner.module.css';
 import bannerImage from '../../images/logos/Frame.png';
 
-const Header = () => {
+
+const Banner = () => {
     return (
-       <section id="header">
+        <>
+          <section className={BannerStyle.banner}>
           <div className="container">
              <div className="row">
                 <div className="col-lg-6 col-md-12">
-                   <div className="header-content">
+                   <div className={BannerStyle.bannerLeft}>
                       <h2>Let’s Grow Your Brand To The Next Level</h2>
                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                          Purus commodo ipsum duis laoreet maecenas. Feugiat </p>
@@ -16,14 +18,13 @@ const Header = () => {
                    </div>
                 </div>
                 <div className="col-lg-6 col-md-12">
-                  <div className="banner">
-                     <img src={bannerImage} alt="" />
-                  </div>
+                   <img src={bannerImage} alt="" className="img-fluid"/>
                 </div>
              </div>
           </div>
-     </section>
+          </section>  
+        </>
     );
 };
 
-export default Header;
+export default Banner;
