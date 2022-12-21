@@ -7,7 +7,6 @@ import Header from '../Layout/Header/Header';
 import Footer from '../Layout/footer/Footer';
 
 
-
 const Router = () => {
     return (
        <BrowserRouter>
