@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import './LoginForm.css';
-import Logo from '../../images/logos/logo.png'
 import { Link, useNavigate } from 'react-router-dom';
 import GoogleIcon from '../../images/google.png';
 import './LoginForm.css';
@@ -55,9 +54,6 @@ const LoginForm = () => {
 
     return (
         <div id="login" className='text-center py-5'>
-           <div className="logo">
-             <Link to="/"><img src={Logo} alt="" style={{width: '10%'}}/></Link>
-           </div>
             <div className="login-container">
                <div className="login-inner">
                <h3>Login With</h3>
