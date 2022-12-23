@@ -7,11 +7,13 @@ import { useState } from "react";
 
 export default function ProductList() {
   const [data, setData] = useState(productRows);
-
+  
+  // handle delate single product
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
   };
 
+  // data table style
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
@@ -58,13 +60,14 @@ export default function ProductList() {
     },
   ];
 
+  console.log(data)
   return (
     <div className="productList">
       <DataGrid
-        rows={data}
+        rows={data? data: ''}
         disableSelectionOnClick
         columns={columns}
-        pageSize={8}
+        pageSize={10}
         checkboxSelection
       />
     </div>
