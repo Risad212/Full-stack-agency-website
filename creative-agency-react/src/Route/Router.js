@@ -11,6 +11,7 @@ import Product from '../Admin/Pages/Product/Product';
 import NewProduct from '../Admin/Pages/newProduct/newProduct';
 import User from '../Admin/Pages/User/User';
 import NewUser from '../Admin/Pages/newUserPage/NewUser';
+import Login from '../Admin/Components/Login/Login';
 
 const Router = () => {
     return (
@@ -19,6 +20,7 @@ const Router = () => {
               <Route exact path='/' element={<HomePage />} />
               <Route path='/home' element={<HomePage />} />
               <Route path='/login' element={<LoginPage />} />
+              <Route path="admin/login" element={<Login />} />
               <Route element={<Admin />}>
                 <Route path='admin' element={<Home  />} />
                 <Route path='user' element={<UserList  />} />
