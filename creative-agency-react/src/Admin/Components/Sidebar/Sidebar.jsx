@@ -5,7 +5,8 @@ import TimelineIcon from '@material-ui/icons/Timeline';
 import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 import PeopleIcon from '@material-ui/icons/People';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
-import InventoryIcon from '@material-ui/icons/Inventory';
+import InventoryIcon from '@mui/icons-material/Inventory';
+import AddBoxIcon from '@mui/icons-material/AddBox';
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
@@ -16,8 +17,6 @@ const Sidebar = () => {
                  <h3 className="sidebarTitle">Dashboard</h3>
                  <ul className="sidebarList">
                     <Link to="/admin" className='link'><li className="sidebarListItem"><LineStyleIcon className='sidebarIcon'/>Home</li></Link>
-                    <li className="sidebarListItem"><TimelineIcon className='sidebarIcon'/>Analytics</li>
-                    <li className="sidebarListItem"><TrendingUpIcon className='sidebarIcon'/>Sales</li>
                  </ul>
               </div>
               {/*-- menu --*/}
@@ -27,7 +26,7 @@ const Sidebar = () => {
                     <Link to="/user" className='link'><li className="sidebarListItem"><PeopleIcon className='sidebarIcon'/>Users</li></Link>
                     <Link to="/newuser" className='link'><li className="sidebarListItem"><PersonAddIcon className='sidebarIcon'/>Add User</li></Link>
                     <Link to="/product" className='link'><li className="sidebarListItem"><InventoryIcon className='sidebarIcon'/>Products</li></Link>
-                    <Link to="/newproduct" className='link'><li className="sidebarListItem"><TimelineIcon className='sidebarIcon'/>Add Products</li></Link>
+                    <Link to="/newproduct" className='link'><li className="sidebarListItem"><AddBoxIcon className='sidebarIcon'/>Add Product</li></Link>
                  </ul>
               </div>
               {/*-- menu --*/}
