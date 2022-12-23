@@ -23,12 +23,12 @@ const Router = () => {
               <Route path="admin/login" element={<Login />} />
               <Route element={<Admin />}>
                 <Route path='admin' element={<Home  />} />
-                <Route path='user' element={<UserList  />} />
-                <Route path="user/:userId" element={<User />} />
-                <Route path="newuser" element={<NewUser />} />
-                <Route path='product' element={<ProductList  />} />
-                <Route path='product/:productId' element={<Product />} />
-                <Route path="newproduct" element={<NewProduct />} />
+                <Route path='admin/user' element={<UserList  />} />
+                <Route path="admin/user/:userId" element={<User />} />
+                <Route path="admin/newuser" element={<NewUser />} />
+                <Route path='admin/product' element={<ProductList  />} />
+                <Route path='admin/product/:productId' element={<Product />} />
+                <Route path="admin/newproduct" element={<NewProduct />} />
               </Route>
               <Route path='*' element={<NotFound />} />
           </Routes>

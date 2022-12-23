@@ -1,11 +1,13 @@
 import React from 'react';
-import './Login.css';
+import adminlogin from './Login.module.css';
+import admin from '../../../images/adminImg.png';
 
 const Login = () => {
     return (
         <>
-            <div className='login-container'>
-                <div className="login">
+            <div className={adminlogin.loginBox}>
+                <div className={adminlogin.login}>
+                    <img src={admin} alt="" />
                     <form action="#">
                         <input type="text" placeholder='Username' />
                         <input type="password" placeholder='Password' />

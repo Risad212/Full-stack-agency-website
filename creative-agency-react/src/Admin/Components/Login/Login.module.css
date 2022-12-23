@@ -1,32 +1,36 @@
-.login-container{
+.loginBox{
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    border: none;
     background-image: url('../../../images/admin.jpg');
     background-position: center;
     background-size: cover;
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .login{
     width: 450px;
     background: #fff;
     border-radius: 10px;
-    height: 320px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.login form{
-    text-align: center
+    height: 400px;
+    text-align: center;
+    padding: 2rem 0;
 }
 .login h2{
     color: #000;
 }
+.login img{
+    width: 20%;
+    border-radius: 50%;
+    margin-bottom: 20px
+}
 .login input{
     display: block;
     margin: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     outline: none;
     width: 270px;
     padding: 10px;
@@ -37,4 +41,7 @@
 }
 .login input[type="submit"]{
     background: rgb(38, 187, 225);
+    border: none;
+    color: #fff;
+    font-weight: 500;
 }
